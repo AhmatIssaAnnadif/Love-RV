@@ -1,0 +1,61 @@
+<div class="page active" id="home">
+  <div class="card">
+    <img src="https://media.tenor.com/2roX3uxz_68AAAAM/cat-love.gif" />
+    <h1>🌸 Veux-tu sortir avec moi ? 🌸</h1>
+    <button onclick="goTo('yes')">OUI 💕</button>
+    <button id="noBtn">non... 🙈</button>
+  </div>
+</div>
+
+<div class="page" id="yes">
+  <div class="card">
+    <img src="https://media.tenor.com/6JptszQgCnkAAAAM/spongebob-happy.gif" />
+    <h1>ATTENDS... TU AS VRAIMENT DIT OUI ?? 😭</h1>
+    <p>J’étais prêt à te voir dire non 😅</p>
+    <button onclick="goTo('date')">okay okay! →</button>
+  </div>
+</div>
+
+<div class="page" id="date">
+  <div class="card">
+    <h1>📅🐾 Alors... tu es libre quand ?</h1>
+    <label>Choisis un jour ✨</label>
+    <input type="date" id="dateInput" />
+
+    <label>Quelle heure ? ⏰</label>
+    <select id="timeInput">
+      <option>18:00 — la bonne réponse tbh</option>
+      <option>19:00</option>
+      <option>20:00</option>
+    </select>
+
+    <button onclick="goTo('food')">fixer la date! 💕</button>
+  </div>
+</div>
+
+<div class="page" id="food">
+  <div class="card">
+    <h1>Qu’est-ce qu’on mange ? ☕✨</h1>
+    <div class="foods">
+      <button onclick="chooseFood('Pizza 🍕')">🍕 Pizza</button>
+      <button onclick="chooseFood('Sushi 🍣')">🍣 Sushi</button>
+      <button onclick="chooseFood('Burger 🍔')">🍔 Burger</button>
+      <button onclick="chooseFood('Pasta 🍝')">🍝 Pasta</button>
+      <button onclick="chooseFood('Tacos 🌮')">🌮 Tacos</button>
+      <button onclick="chooseFood('Ramen 🍜')">🍜 Ramen</button>
+    </div>
+  </div>
+</div>
+
+<div class="page" id="final">
+  <div class="card">
+    <img src="https://media.tenor.com/9vRAkntogEMAAAAM/shrek-smile.gif" />
+    <h1>Je suis content que tu n’aies pas dit non.</h1>
+    <h2>Prépare-toi, je viens te chercher 🚗💕</h2>
+    <p id="summary"></p>
+    <small>P.S. les gens normaux envoient un message. Moi j’ai créé un site pour toi 😌</small>
+  </div>
+</div>
+
+<link rel="stylesheet" href="style.css" />
+<script src="script.js"></script>
